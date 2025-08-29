@@ -94,7 +94,35 @@ export class Service{
             throw new Error("Appwrite service error: " + error);
         }
     }
-    
+
+    //file service
+    //this will deal with storage
+    //this will return string of uploaded file
+    async uploadFile(file) {
+        try {
+            return await this.bucket.createFile(
+                config.APPWRITE_BUCKET_ID,
+                ID.unique(),
+                file
+            );
+        } catch (error) {
+            throw new Error("Appwrite service error: " + error);
+        }
+    }
+
+
+
+    //deletefile
+    async deleteFile(fileId) {
+        try {
+            return await this.bucket.deleteFile(
+                config.APPWRITE_BUCKET_ID,
+                fileId
+            );
+        } catch (error) {
+            throw new Error("Appwrite service error: " + error);
+        }
+    }
 }
 
 const service = new Service();
