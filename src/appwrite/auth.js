@@ -17,14 +17,12 @@ import { Client, Account, ID } from "appwrite";
 
 //if required same code of above can be written we are using another approach for smoother operation
 
-//we are class syntax so that we remove teh concept of vendor lock-in 
+//we are taking class syntax so that we remove the concept of vendor lock-in 
 //after this we can easily switch to firebase ,supabase (backend services)
 
 export class Authservice{
     client = new Client();
     account;
-
-
 
     constructor() {
         this.client

@@ -83,7 +83,7 @@ export class Service{
     }
 
     async getPosts(queries=[Query.equal("status","Active")]){
-        //here to give status u need to enable indexes in teh databse designing part
+        //here to give status u need to enable indexes in the database designing part
         try {
             return await this.databases.listDocuments(
                 config.APPWRITE_DATABASE_ID,
@@ -97,7 +97,7 @@ export class Service{
 
     //file service
     //this will deal with storage
-    //this will return string of uploaded file
+    //this will return Id of uploaded file
     async uploadFile(file) {
         try {
             return await this.bucket.createFile(
@@ -112,13 +112,14 @@ export class Service{
 
 
 
-    //deletefile
+    //deletefile //filed id will be given by above method
     async deleteFile(fileId) {
         try {
             return await this.bucket.deleteFile(
                 config.APPWRITE_BUCKET_ID,
                 fileId
             );
+            return true; //this is for handling in teh frontend
         } catch (error) {
             throw new Error("Appwrite service error: " + error);
         }
