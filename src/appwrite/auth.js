@@ -1,7 +1,6 @@
 import { Client, Account, ID } from "appwrite";
 import config from "../config/config.js";
 
-import { Client, Account, ID } from "appwrite";
 
 // const client = new Client()
 //     .setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
