@@ -35,7 +35,7 @@ export class Authservice{
 
     //user will pass a object of email,passowrd,name thats y we destrcuturing it here
     async createAccount({email,password,name}){
-        try {
+        
             const user = await this.account.create(
                 ID.unique(),
                 email,
@@ -51,15 +51,13 @@ export class Authservice{
                 return user
             }
             
-        } catch (error) {
-            throw error;
-        }
+       
     }
 
     //
     async Login({email,password}){
         //safe to wrap in it try catch 
-        try {
+        
             const loggedInUser =this.account.createEmailPasswordSession(
                 email,
                 password
@@ -71,9 +69,7 @@ export class Authservice{
             }else{
                 return loggedInUser
             }
-        } catch (error) {
-            throw error
-        }
+        
     }
 
 

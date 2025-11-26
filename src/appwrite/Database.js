@@ -119,7 +119,7 @@ export class Service{
                 config.APPWRITE_BUCKET_ID,
                 fileId
             );
-            return true; //this is for handling in teh frontend
+            // return true//this is for handling in teh frontend
         } catch (error) {
             throw new Error("Appwrite service error: " + error);
         }
