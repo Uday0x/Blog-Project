@@ -54,7 +54,9 @@ const Header = () => {
                     >{item.name}</button>
                   </li>
                ):null
-              )}
+              )}  
+
+              {/* logout btn will only be visible only when the user is logged in meaning authStatus is true */}
               {authStatus && (
                   <li>
                       <LogoutBtn />
