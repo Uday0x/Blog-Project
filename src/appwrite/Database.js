@@ -124,6 +124,13 @@ export class Service{
             throw new Error("Appwrite service error: " + error);
         }
     }
+
+    getFilePreview(fileId){
+        return this.bucket.getFilePreview(
+            config.APPWRITE_BUCKET_ID,
+            fileId
+        )
+    }
 }
 
 const service = new Service();
