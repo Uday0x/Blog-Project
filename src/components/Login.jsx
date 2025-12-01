@@ -52,6 +52,7 @@ function Login() {
         {error && <p className="text-red-600 mt-8 text-center">{error}</p>}
         <form onSubmit={handleSubmit(login)} className="mt-8">
           <div className="space-y-5">
+            {/* //this is compnent input */}
             <Input
               label="Email: "
               placeholder="Enter your Email"
