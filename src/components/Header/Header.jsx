@@ -1,5 +1,5 @@
 import React from 'react'
-import {Conatiner ,Logo,LogoutBtn} from "../index.js"
+import {Container ,Logo,LogoutBtn} from "../index.js"
 //import Link ,use selctor ,use navigate 
 
 import { Link } from 'react-router-dom'
@@ -35,7 +35,7 @@ const Header = () => {
   return (
     <div>
       <header className='py-3 shadow bg-grap-500'>
-        <Conatiner>
+        <Container>
           <nav className='flex'>
               <div className='mr-4'>
                   <Link to ="/">
@@ -64,7 +64,7 @@ const Header = () => {
               )}
               </ul>
           </nav>
-        </Conatiner>
+        </Container>
       </header>
     </div>
   )
