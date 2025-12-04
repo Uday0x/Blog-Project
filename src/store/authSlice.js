@@ -1,7 +1,7 @@
-//It isnt any necessary u have to create files the here ,u have can also create under features package 
+//It isnt any necessary u have to create files here ,u have can also create under features package 
 
 
-import { createSlice } from "@reduxjs/toolkit"; //careful what imports are coming from sometimes this may giev error
+import { createSlice } from "@reduxjs/toolkit"; //careful what imports are coming from sometimes this may give error
 
 const initialState={
     status:false,

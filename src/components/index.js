@@ -5,6 +5,7 @@ import Logo from "./Logo.jsx"
 import Input from "./Input.jsx"
 import Select from "./Select.jsx"
 import RTE from "./RTE.jsx"
+import AuthLayout from "./AuthLayout.jsx"
 
 export  {
     Footer,
@@ -13,5 +14,6 @@ export  {
     Logo,
     Input,
     Select,
-    RTE
+    RTE,
+    AuthLayout
 }
