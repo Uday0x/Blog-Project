@@ -12,8 +12,8 @@ export  {
     Header,
     Container,
     Logo,
-    Input,
     Select,
+    Input,
     RTE,
     AuthLayout
 }
