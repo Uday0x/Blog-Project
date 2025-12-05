@@ -58,7 +58,7 @@ export class Service{
 
     //here slug is like unique Id which will be handled later
     //concentrate on on the return button ,coz the smae thing needs to be handkled in teh frontend
-    async DeletePost(slug){
+    async deletePost(slug){
         try {
           return await this.databases.deleteDocument(
               config.APPWRITE_DATABASE_ID,
