@@ -1,4 +1,4 @@
-import { StrictMode } from 'react'
+
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
@@ -12,6 +12,7 @@ import Signup from './pages/Signup.jsx'
 import EditPost from "./pages/EditPost.jsx"
 import Post from "./pages/Post.jsx"
 import AllPosts from "./pages/AllPosts.jsx"
+import React from 'react'
 
 
 const router = createBrowserRouter([
